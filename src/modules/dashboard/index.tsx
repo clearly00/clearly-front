@@ -1,4 +1,5 @@
 import { Card, Col, Layout, PageHeader, Row } from "antd";
+import { Chart } from "../../components/charts";
 import "../../styles/App.less";
 
 const { Header, Content, Footer } = Layout;
@@ -26,6 +27,28 @@ export function Dashboard() {
             </Col>
             <Col span={6}>
               <Card title="On Queue">On Queue</Card>
+            </Col>
+          </Row>
+          <Row gutter={[16, 16]}>
+            <Col span={6}>
+              <Card title="Active Workers">
+                <Chart />
+              </Card>
+            </Col>
+            <Col span={6}>
+              <Card title="Active Workers">
+                <Chart />
+              </Card>
+            </Col>
+            <Col span={6}>
+              <Card title="Active Workers">
+                <Chart />
+              </Card>
+            </Col>
+            <Col span={6}>
+              <Card title="Active Workers">
+                <Chart />
+              </Card>
             </Col>
           </Row>
         </div>
